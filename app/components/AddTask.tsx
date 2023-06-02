@@ -12,14 +12,19 @@ export const AddTask = () => {
 	const [newTaskValue, setNewTaskValue] = useState<string>("");
 
 	const handleSubmitNewTodo: FormEventHandler<HTMLFormElement> = async (e) => {
-		e.preventDefault();
-		await addTodo({
-			id: uuidv4(),
-			text: newTaskValue,
-		});
-		setModalOpen(false);
-		setNewTaskValue("");
-		router.refresh();
+    e.preventDefault();
+    if (!newTaskValue) {
+			return alert("Please type a task");
+		} else {
+			await addTodo({
+				id: uuidv4(),
+				text: newTaskValue,
+			});
+			setModalOpen(false);
+			setNewTaskValue("");
+			router.refresh();
+		}
+
 	};
 
 	return (
