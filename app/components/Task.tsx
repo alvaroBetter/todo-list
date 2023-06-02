@@ -22,6 +22,7 @@ export const Task: React.FC<TaskProps> = ({ task }) => {
 			id: task.id,
 			text: taskToEdit,
 		});
+    
 		setOpenModalEdit(false);
 		setTaskToEdit("");
 		router.refresh();
