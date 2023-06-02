@@ -66,7 +66,7 @@ export const Task: React.FC<TaskProps> = ({ task }) => {
 				/>
 				<Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
 					<h3 className="text-lg">
-						Are you sure, you want to delete this task?
+						Are you sure? you want to delete this task?
 					</h3>
 					<div className="modal-action">
 						<button className="btn" onClick={() => handleDeleteTask(task.id)}>
