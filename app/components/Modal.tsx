@@ -1,3 +1,5 @@
+import { AiOutlineClose } from "react-icons/ai";
+
 interface ModalProps {
 	modalOpen: boolean;
 	setModalOpen: (open: boolean) => boolean | void;
@@ -12,15 +14,14 @@ export const Modal: React.FC<ModalProps> = ({
 		<>
 			<div className={`modal ${modalOpen ? "modal-open" : ""}`}>
 				<div className="modal-box">
+					<label
+						onClick={() => setModalOpen(false)}
+						htmlFor="my_modal_6"
+						className="btn flex w-14">
+						<AiOutlineClose />
+					</label>
 					{children}
-					<div className="modal-action">
-						<label
-							onClick={() => setModalOpen(false)}
-							htmlFor="my_modal_6"
-							className="btn">
-							Close!
-						</label>
-					</div>
+					<div className="modal-action"></div>
 				</div>
 			</div>
 		</>
