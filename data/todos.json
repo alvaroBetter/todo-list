@@ -1,12 +1,3 @@
 {
-	"tasks": [
-		{
-			"id": "1",
-			"text": "buy milk with some orange juice"
-		},
-		{
-			"id": "2",
-			"text": "help my frind to find a job"
-		}
-	]
+  "tasks": []
 }
