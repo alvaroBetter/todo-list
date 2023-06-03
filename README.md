@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app@latest`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [daisyUI](https://daisyui.com/).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app@latest`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), typescript and [daisyUI](https://daisyui.com/).
 
 ## Getting Started
 
